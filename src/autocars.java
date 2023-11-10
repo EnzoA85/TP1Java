@@ -2,7 +2,7 @@ class autocars extends camion{
     
     private int nombrePassagers;
 
-    public autocars(float prix, String modele, int dateAchat, String numImmat, String permis, int volumeStockage,
+    public autocars(float prix, String modele, int dateAchat, String numImmat, String permis, double volumeStockage,
             int nombrePassagers) {
         super(prix, modele, dateAchat, numImmat, permis, volumeStockage);
         this.nombrePassagers = nombrePassagers;
@@ -16,7 +16,7 @@ class autocars extends camion{
         this.nombrePassagers = nombrePassagers;
     }
 
-    public boolean peutTransporterPassagers(int nbPassagers,int volumeAVGpassager){
+    public boolean peutTransporterPassagers(int nbPassagers,double volumeAVGpassager){
         if (this.nombrePassagers >= nbPassagers && this.getVolumeStockage() >= volumeAVGpassager) {
             return true;
         } else {

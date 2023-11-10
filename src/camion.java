@@ -1,21 +1,21 @@
 class camion extends vehicule{
 
-    private int volumeStockage;
+    private double volumeStockage;
 
-    public camion(float prix, String modele, int dateAchat, String numImmat, String permis, int volumeStockage) {
+    public camion(float prix, String modele, int dateAchat, String numImmat, String permis, double volumeStockage) {
         super(prix, modele, dateAchat, numImmat, permis);
         this.volumeStockage = volumeStockage;
     }
 
-    public int getVolumeStockage() {
+    public double getVolumeStockage() {
         return volumeStockage;
     }
 
-    public void setVolumeStockage(int volumeStockage) {
+    public void setVolumeStockage(double volumeStockage) {
         this.volumeStockage = volumeStockage;
     }
 
-    public boolean peutTransporterVolume(int volume){
+    public boolean peutTransporterVolume(double volume){
         if (this.volumeStockage >= volume) {
             return true;
         } else {
