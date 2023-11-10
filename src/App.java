@@ -8,17 +8,29 @@ public class App {
 
         camion camion1 = new camion(100000,"Volvo", 2010,"GG-123-GG", "C", 100);
 
+        System.out.println(" ");
+        System.out.println("----------------------------Voiture---------------------------------------");
         System.out.println("Voiture 1 :");
         voiture1.afficherVoiture();
         System.out.println("Le cout de la location de la voiture 1 est : "+voiture1.coutLocation());
+        System.out.println(" ");
         System.out.println("Voiture 2 :");
         voiture2.afficherVoiture();
         System.out.println("Le cout de la location de la voiture 2 est : "+voiture2.coutLocation());
-        System.out.println("Voiture 3 :");
+
+        System.out.println(" ");
+        System.out.println("----------------------------Autocars---------------------------------------");
+        System.out.println("Autocars 1 :");
         autocar1.afficherVehicule();
-        System.out.println("Voiture 4 :");
+        System.out.println("Autocars 1 "+autocar1.peutTransporterPassagers(49, 85));
+        System.out.println(" ");
+        System.out.println("Autocars 2 :");
         autocar2.afficherVehicule();
-        System.out.println("Voiture 5 :");
+        System.out.println("Autocars 1 "+autocar2.peutTransporterPassagers(80, 200));
+
+        System.out.println(" ");
+        System.out.println("----------------------------Camion---------------------------------------");
+        System.out.println("Camion :");
         System.out.println("101Kg "+camion1.peutTransporterVolume(101));
         System.out.println("85Kg "+camion1.peutTransporterVolume(85));
         camion1.afficherVehicule();

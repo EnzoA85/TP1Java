@@ -16,4 +16,13 @@ class autocars extends camion{
         this.nombrePassagers = nombrePassagers;
     }
 
+    public String peutTransporterPassagers(int nbPassagers,int volumeAVGpassager){
+        if (this.nombrePassagers > nbPassagers && this.getVolumeStockage() > volumeAVGpassager) {
+            String result = "peu transporter";
+            return result;
+        } else {
+            String result = "ne peu pas transporter";
+            return result;
+        }
+    }
 }
