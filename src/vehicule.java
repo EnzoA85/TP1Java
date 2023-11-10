@@ -68,5 +68,15 @@ public class vehicule {
         System.out.println("Immatriculation :" + this.numImmat);
         System.out.println("Permis :" + this.permis);
     }
+
+    public float coutLocation(){
+        float cout;
+        if (age()<1) {
+            cout = prix/200;
+        } else {
+            cout = prix/250;
+        }
+        return cout;
+    }
 }
  
