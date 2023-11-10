@@ -1,3 +1,5 @@
+import java.time.Year;
+
 public class vehicule {
 
     protected float prix;
@@ -52,5 +54,10 @@ public class vehicule {
 
     public void setPermis(String permis) {
         this.permis = permis;
+    }
+
+    public int age(){
+        int age = Year.now().getValue() - this.dateAchat;
+        return age;
     }
 }
