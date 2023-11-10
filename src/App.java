@@ -17,6 +17,8 @@ public class App {
         System.out.println("Voiture 4 :");
         autocar2.afficherVehicule();
         System.out.println("Voiture 5 :");
+        System.out.println("101Kg "+camion1.peutTransporterVolume(101));
+        System.out.println("85Kg "+camion1.peutTransporterVolume(85));
         camion1.afficherVehicule();
     }
 }
