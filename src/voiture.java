@@ -22,4 +22,9 @@ class voiture extends vehicule{
     public void enleverAutoradio(){
         autoradio = false;
     }
+
+    public void afficherVoiture(){
+        super.afficherVehicule();
+        System.out.println("Autoradio :" + this.autoradio);
+    }
 }

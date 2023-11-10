@@ -60,4 +60,13 @@ public class vehicule {
         int age = Year.now().getValue() - this.dateAchat;
         return age;
     }
+
+    public void afficherVehicule(){
+        System.out.println("Modèle :" + this.modele);
+        System.out.println("Prix :" + this.prix);
+        System.out.println("Date d'achat :" + this.dateAchat);
+        System.out.println("Immatriculation :" + this.numImmat);
+        System.out.println("Permis :" + this.permis);
+    }
 }
+ 
