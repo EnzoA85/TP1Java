@@ -21,18 +21,14 @@ public class App {
         System.out.println(" ");
         System.out.println("----------------------------Autocars---------------------------------------");
         System.out.println("Autocars 1 :");
-        autocar1.afficherVehicule();
-        System.out.println("Autocars 1 "+autocar1.peutTransporterPassagers(49, 85));
+        autocar1.afficherAutocar();
         System.out.println(" ");
         System.out.println("Autocars 2 :");
-        autocar2.afficherVehicule();
-        System.out.println("Autocars 1 "+autocar2.peutTransporterPassagers(80, 200));
+        autocar2.afficherAutocar();
 
         System.out.println(" ");
         System.out.println("----------------------------Camion---------------------------------------");
         System.out.println("Camion :");
-        System.out.println("101Kg "+camion1.peutTransporterVolume(101));
-        System.out.println("85Kg "+camion1.peutTransporterVolume(85));
-        camion1.afficherVehicule();
+        camion1.afficherCamion();
     }
 }

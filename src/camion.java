@@ -15,13 +15,17 @@ class camion extends vehicule{
         this.volumeStockage = volumeStockage;
     }
 
-    public String peutTransporterVolume(int volume){
-        if (this.volumeStockage > volume) {
-            String result = "Le camion peu transporter";
-            return result;
+    public boolean peutTransporterVolume(int volume){
+        if (this.volumeStockage >= volume) {
+            return true;
         } else {
-            String result = "Le camion ne peu pas transporter";
-            return result;
+            return false;
         }
+    }
+
+    public void afficherCamion(){
+        super.afficherVehicule();
+        System.out.println("Volume :" + this.volumeStockage);
+        System.out.println("Peut Transporter :" + this.peutTransporterVolume(100));
     }
 }

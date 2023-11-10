@@ -16,13 +16,17 @@ class autocars extends camion{
         this.nombrePassagers = nombrePassagers;
     }
 
-    public String peutTransporterPassagers(int nbPassagers,int volumeAVGpassager){
-        if (this.nombrePassagers > nbPassagers && this.getVolumeStockage() > volumeAVGpassager) {
-            String result = "peu transporter";
-            return result;
+    public boolean peutTransporterPassagers(int nbPassagers,int volumeAVGpassager){
+        if (this.nombrePassagers >= nbPassagers && this.getVolumeStockage() >= volumeAVGpassager) {
+            return true;
         } else {
-            String result = "ne peu pas transporter";
-            return result;
+            return false;
         }
+    }
+
+    public void afficherAutocar(){
+        super.afficherCamion();
+        System.out.println("Nombre de place :" + this.nombrePassagers);
+        System.out.println("Peut Transporter :" + this.peutTransporterPassagers(70,125));
     }
 }
