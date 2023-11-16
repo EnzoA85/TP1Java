@@ -26,6 +26,5 @@ class camion extends vehicule{
     public void afficherCamion(){
         super.afficherVehicule();
         System.out.println("Volume :" + this.volumeStockage);
-        System.out.println("Peut Transporter :" + this.peutTransporterVolume(100));
     }
 }
